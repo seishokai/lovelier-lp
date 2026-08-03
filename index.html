@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovelier ラブリエ | NOA × 清翔会</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; width: 100%; }
+        body { font-family: 'Cormorant Garamond', serif; background: #faf8f3; }
+        
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.7)), 
+                        url('https://drive.google.com/uc?id=1vpF5kkUsoxp_XUWYn2D_rdrSYY6x1ctp&export=view');
+            background-size: cover;
+            background-position: center center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding-bottom: 80px;
+        }
+        
+        .hero h1 {
+            font-size: clamp(48px, 8vw, 96px);
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: clamp(14px, 2vw, 18px);
+            font-weight: 300;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 600px;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+        }
+        
+        .btn-cta {
+            display: inline-block;
+            background: #c4a882;
+            color: #000;
+            padding: 18px 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.15em;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 12px rgba(196,168,130,0.3);
+        }
+        
+        .btn-cta:hover {
+            background: #d4b399;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(196,168,130,0.5);
+        }
+        
+        .section {
+            padding: clamp(60px, 10vw, 100px) clamp(20px, 5vw, 80px);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section h2 {
+            font-size: clamp(32px, 5vw, 64px);
+            font-weight: 400;
+            font-style: italic;
+            color: #2a2a2a;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .trust-item {
+            padding: 20px;
+        }
+        
+        .trust-num {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(32px, 4vw, 56px);
+            font-weight: 700;
+            color: #c4a882;
+            margin-bottom: 10px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>歯を削らずに、<br>理想の白きと形を。</h1>
+        <p>世界唯一のジルコニアベニア技術 × ノア<br>痛みなし・麻酔不要・最短3週間</p>
+        <button class="btn-cta">無料カウンセリングを予約する</button>
+    </section>
+
+    <section class="section">
+        <h2>Lovelier ラブリエ</h2>
+        <div class="trust-grid">
+            <div class="trust-item"><div class="trust-num">0.04mm</div>世界最薄厚</div>
+            <div class="trust-item"><div class="trust-num">2回</div>通院回数</div>
+            <div class="trust-item"><div class="trust-num">3週間</div>最短施術</div>
+            <div class="trust-item"><div class="trust-num">0</div>歯を削らない</div>
+        </div>
+    </section>
+
+    <section class="section" style="background: #f5f3ef;">
+        <h2>ラブリエの美しさ</h2>
+        <div class="gallery" id="gallery"></div>
+    </section>
+
+    <section class="section">
+        <h2>なぜ、ラブリエなのか。</h2>
+        <p style="font-size: 16px; line-height: 1.8; color: #555; text-align: center; max-width: 800px; margin: 0 auto;">
+            ラブリエは、世界唯一の 0.04mm ジルコニアベニア技術。<br>
+            削らずに歯を美しく変身させることができます。<br>
+            <br>
+            痛みなし、麻酔不要、最短 3 週間。<br>
+            患者様のお悩みを最短で解決します。
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Lovelier × 清翔会</p>
+        <p>NOA × 清翔会 SPECIAL COLLABORATION</p>
+    </footer>
+
+    <script>
+        const imageIds = [
+            '1vpF5kkUsoxp_XUWYn2D_rdrSYY6x1ctp',
+            '1-yUbQePNxHUjDEpMMK5qatZZMrT4Q8ib',
+            '1qRxKHEN_mF8pB8jK5YwnhsHzeh9N0Nz2',
+            '1BqkFAR8rZWAYCoH852OsC5hszbNNwvVA',
+            '1H-4wczQ29qAyXxpeH1CVoFAyGC_gDnxi',
+            '1yd4wChRvegcupNewqIiPqsP5cl295GXw'
+        ];
+        
+        const gallery = document.getElementById('gallery');
+        imageIds.forEach(id => {
+            const item = document.createElement('div');
+            item.className = 'gallery-item';
+            item.innerHTML = '<img src="https://drive.google.com/uc?id=' + id + '&export=view" alt="Lovelier" loading="lazy">';
+            gallery.appendChild(item);
+        });
+    </script>
+</body>
+</html>
