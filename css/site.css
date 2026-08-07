@@ -3277,3 +3277,19 @@ html {
     border-top: 1px solid rgba(226, 199, 143, .35);
   }
 }
+/* v59 — intentional title wrapping and expanded doctor statement */
+#risks-title .risks-title-line { display: inline-block; }
+.doctor-manifesto p { max-width: 980px; margin: 20px 0 0; font-size: clamp(17px,1.25vw,21px); line-height: 2; }
+.doctor-manifesto p + p { margin-top: 12px; }
+.doctor-manifesto em { color: #f0d49f; font-style: normal; border-bottom: 1px solid rgba(218,177,102,.55); }
+.doctor-manifesto strong { margin-top: 26px; padding-top: 20px; border-top: 1px solid rgba(218,177,102,.25); }
+@media (min-width: 768px) {
+  #risks-title .risks-title-line { white-space: nowrap; }
+}
+@media (max-width: 767px) {
+  #risks-title { font-size: 28px; letter-spacing: -.02em; }
+  #risks-title .risks-title-line { display: inline-block; white-space: nowrap; }
+  .doctor-manifesto p { margin-top: 17px; font-size: 16px; line-height: 1.95; }
+  .doctor-manifesto p + p { margin-top: 11px; }
+  .doctor-manifesto strong { margin-top: 22px; padding-top: 17px; }
+}
