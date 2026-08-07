@@ -3293,3 +3293,37 @@ html {
   .doctor-manifesto p + p { margin-top: 11px; }
   .doctor-manifesto strong { margin-top: 22px; padding-top: 17px; }
 }
+/* v60 — keep meaningful phrases together across phone and tablet widths */
+.section-index { white-space: nowrap; }
+.decision-strip .decision-nowrap,
+.noa-case-facts .noa-fact-nowrap { color: inherit; font: inherit; white-space: nowrap; }
+.features-title-break { display: none; }
+.cta-first-line { display: inline-block; white-space: nowrap; }
+@media (max-width: 900px) {
+  .features-title-break { display: block; }
+  .luxury-final { display: flex; min-height: 0; flex-direction: column; }
+  .luxury-final figure { min-height: 0; height: 520px; }
+  .luxury-final figure::after { background: linear-gradient(180deg, transparent 60%, #090b0c 100%); }
+  .luxury-final .final-cta-content { width: 100%; padding: 72px 56px 84px; }
+  .luxury-final h2 { font-size: 46px; }
+}
+@media (max-width: 767px) {
+  .luxury-final .final-cta-content { padding: 70px 20px 82px; }
+  .luxury-final h2 { font-size: 36px; }
+}
+/* v60b — contain hero case card at tablet widths */
+@media (min-width: 768px) and (max-width: 900px) {
+  .hero-case-peek {
+    right: 12px;
+    width: calc(100% - 24px);
+    min-height: 108px;
+    grid-template-columns: 108px minmax(0, 1fr) 18px;
+    gap: 7px 9px;
+    padding: 11px 12px;
+  }
+  .hero-case-images > span { height: 58px; }
+  .hero-case-copy strong { font-size: 11px; line-height: 1.38; }
+  .hero-case-copy small { margin-top: 4px; font-size: 7px; }
+}
+/* v60c — prevent viewport-width artwork from creating a horizontal scrollbar */
+html { overflow-x: clip; }
