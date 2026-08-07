@@ -3089,3 +3089,10 @@ html {
     grid-template-columns: 1fr;
   }
 }
+/* v56 - center the comparison item axis */
+.comparison-grid > div > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
