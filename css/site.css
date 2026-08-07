@@ -3096,3 +3096,118 @@ html {
   justify-content: center;
   text-align: center;
 }
+/* v57 - emphasize the two-visit treatment flow */
+.flow-head .flow-head-main {
+  grid-column: 2 / 4;
+  max-width: 980px;
+}
+
+.flow-visit-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  margin: 0 0 18px;
+  padding: 0 12px;
+  border: 1px solid rgba(166, 138, 93, .5);
+  color: #8b6a35;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+
+.flow-head h2 {
+  display: flex;
+  align-items: baseline;
+  gap: .1em;
+  margin: 0;
+  font-size: clamp(64px, 7.2vw, 112px);
+  line-height: .95;
+  letter-spacing: -.07em;
+}
+
+.flow-head h2 span,
+.flow-head h2 em {
+  font: inherit;
+  font-size: .58em;
+  font-style: normal;
+  letter-spacing: -.05em;
+}
+
+.flow-head h2 strong {
+  color: #9a7434;
+  font: 400 1em/.9 var(--serif);
+  text-shadow: 0 10px 32px rgba(154, 116, 52, .12);
+}
+
+.flow-headline {
+  margin: 30px 0 0;
+  font: 500 clamp(20px, 2vw, 29px)/1.65 var(--serif);
+}
+
+.flow-visit-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.flow-visit-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  margin: 0 0 9px;
+  padding: 0 9px;
+  border: 1px solid rgba(166, 138, 93, .4);
+  color: #86652f;
+  background: rgba(166, 138, 93, .055);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.flow-visit-badge.is-accent {
+  border-color: #9a7434;
+  color: #fff;
+  background: #9a7434;
+}
+
+.flow-visit-badge.is-remote {
+  border-color: rgba(49, 95, 112, .38);
+  color: #315f70;
+  background: rgba(49, 95, 112, .055);
+}
+
+.flow-visit-badge.is-after {
+  border-color: var(--border);
+  color: var(--muted);
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  .flow-head .flow-head-main {
+    max-width: none;
+  }
+
+  .flow-visit-eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .flow-head h2 {
+    gap: .08em;
+    font-size: clamp(58px, 20vw, 78px);
+  }
+
+  .flow-head h2 span,
+  .flow-head h2 em {
+    font-size: .5em;
+  }
+
+  .flow-headline {
+    margin-top: 24px;
+    font-size: 19px;
+  }
+
+  .flow-visit-note br {
+    display: none;
+  }
+}
