@@ -1,0 +1,512 @@
+[
+  {
+    "slug": "rep-face-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9938.JPG",
+    "usage": "代表症例・After顔貌",
+    "orientation": 8,
+    "original_size": [
+      2592,
+      3888
+    ],
+    "web_size": [
+      1200,
+      1800
+    ],
+    "bytes": 129164
+  },
+  {
+    "slug": "rep-mouth-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_7243.JPG",
+    "usage": "代表症例・Before口腔内",
+    "orientation": 1,
+    "original_size": [
+      2409,
+      1425
+    ],
+    "web_size": [
+      1800,
+      1065
+    ],
+    "bytes": 86970
+  },
+  {
+    "slug": "rep-mouth-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9940.JPG",
+    "usage": "代表症例・After口腔内",
+    "orientation": 1,
+    "original_size": [
+      3888,
+      2592
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 119104
+  },
+  {
+    "slug": "rep-profile-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9953.JPG",
+    "usage": "代表症例・After横顔",
+    "orientation": 1,
+    "original_size": [
+      3888,
+      2592
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 80410
+  },
+  {
+    "slug": "product-single",
+    "source": "C:\\Users\\USER\\lovelier-rebuild\\research\\pptx-media\\image10.jpg",
+    "usage": "ラブリエとは・単体",
+    "orientation": 1,
+    "original_size": [
+      1191,
+      794
+    ],
+    "web_size": [
+      1191,
+      794
+    ],
+    "bytes": 9824
+  },
+  {
+    "slug": "product-smile",
+    "source": "C:\\Users\\USER\\lovelier-rebuild\\research\\pptx-media\\image16.jpg",
+    "usage": "0.04mm・製品イメージ",
+    "orientation": 1,
+    "original_size": [
+      1170,
+      931
+    ],
+    "web_size": [
+      1170,
+      931
+    ],
+    "bytes": 28874
+  },
+  {
+    "slug": "product-detail",
+    "source": "C:\\Users\\USER\\lovelier-rebuild\\research\\pptx-media\\image17.jpg",
+    "usage": "ラブリエとは・接写",
+    "orientation": 1,
+    "original_size": [
+      1144,
+      1430
+    ],
+    "web_size": [
+      1144,
+      1430
+    ],
+    "bytes": 40362
+  },
+  {
+    "slug": "concern-gap",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\②すきっ歯　顔あり\\资源 15.jpg",
+    "usage": "悩み別症例・すきっ歯",
+    "orientation": 1,
+    "original_size": [
+      1840,
+      1227
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 160700
+  },
+  {
+    "slug": "concern-black-triangle",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\④ブラックトライアングル　顔あり\\资源 45.jpg",
+    "usage": "悩み別症例・ブラックトライアングル",
+    "orientation": 1,
+    "original_size": [
+      1808,
+      1279
+    ],
+    "web_size": [
+      1800,
+      1273
+    ],
+    "bytes": 95668
+  },
+  {
+    "slug": "concern-color",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑥色味\\资源 19.jpg",
+    "usage": "悩み別症例・色味",
+    "orientation": 1,
+    "original_size": [
+      1561,
+      708
+    ],
+    "web_size": [
+      1561,
+      708
+    ],
+    "bytes": 49788
+  },
+  {
+    "slug": "concern-enamel",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑧唇側脱灰\\资源 25.jpg",
+    "usage": "悩み別症例・歯面の見え方",
+    "orientation": 1,
+    "original_size": [
+      1561,
+      1104
+    ],
+    "web_size": [
+      1561,
+      1104
+    ],
+    "bytes": 76180
+  },
+  {
+    "slug": "feature-preserve",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9939.JPG",
+    "usage": "特徴1",
+    "orientation": 8,
+    "original_size": [
+      2592,
+      3888
+    ],
+    "web_size": [
+      1200,
+      1800
+    ],
+    "bytes": 127890
+  },
+  {
+    "slug": "feature-thin",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9952.JPG",
+    "usage": "特徴2",
+    "orientation": 1,
+    "original_size": [
+      3888,
+      2592
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 62410
+  },
+  {
+    "slug": "feature-strength",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9948.JPG",
+    "usage": "特徴3",
+    "orientation": 1,
+    "original_size": [
+      3888,
+      2592
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 52186
+  },
+  {
+    "slug": "feature-design",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_993l9.JPG",
+    "usage": "特徴4",
+    "orientation": 1,
+    "original_size": [
+      2281,
+      1811
+    ],
+    "web_size": [
+      1800,
+      1429
+    ],
+    "bytes": 102706
+  },
+  {
+    "slug": "noa-secondary",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\ノアさん\\DSC00217.JPG",
+    "usage": "ノアさんセクション",
+    "orientation": 1,
+    "original_size": [
+      4240,
+      2832
+    ],
+    "web_size": [
+      1800,
+      1202
+    ],
+    "bytes": 56996
+  },
+  {
+    "slug": "clinic-noa",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\ノアさん\\DSC00244.JPG",
+    "usage": "医院・担当者セクション",
+    "orientation": 1,
+    "original_size": [
+      4240,
+      2832
+    ],
+    "web_size": [
+      1800,
+      1202
+    ],
+    "bytes": 118962
+  },
+  {
+    "slug": "cta-noa",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\ノアさん\\DSC00233.JPG",
+    "usage": "最終CTA",
+    "orientation": 8,
+    "original_size": [
+      2832,
+      4240
+    ],
+    "web_size": [
+      1202,
+      1800
+    ],
+    "bytes": 76616
+  },
+  {
+    "slug": "case-01-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\②すきっ歯　顔あり\\资源 16.jpg",
+    "usage": "症例一覧1・Before",
+    "orientation": 1,
+    "original_size": [
+      1559,
+      1040
+    ],
+    "web_size": [
+      1559,
+      1040
+    ],
+    "bytes": 71000
+  },
+  {
+    "slug": "case-01-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\②すきっ歯　顔あり\\资源 17.jpg",
+    "usage": "症例一覧1・After",
+    "orientation": 1,
+    "original_size": [
+      1559,
+      1040
+    ],
+    "web_size": [
+      1559,
+      1040
+    ],
+    "bytes": 61584
+  },
+  {
+    "slug": "case-02-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\③すきっ歯　顔あり\\资源 6.jpg",
+    "usage": "症例一覧2・Before",
+    "orientation": 1,
+    "original_size": [
+      2115,
+      1411
+    ],
+    "web_size": [
+      1800,
+      1201
+    ],
+    "bytes": 194114
+  },
+  {
+    "slug": "case-02-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\③すきっ歯　顔あり\\资源 7.jpg",
+    "usage": "症例一覧2・After",
+    "orientation": 1,
+    "original_size": [
+      2116,
+      1411
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 243930
+  },
+  {
+    "slug": "case-03-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑤歯のガタツキ　顔あり\\资源 4.jpg",
+    "usage": "症例一覧3・Before",
+    "orientation": 1,
+    "original_size": [
+      2021,
+      1092
+    ],
+    "web_size": [
+      1800,
+      973
+    ],
+    "bytes": 75328
+  },
+  {
+    "slug": "case-03-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑤歯のガタツキ　顔あり\\资源 5.jpg",
+    "usage": "症例一覧3・After",
+    "orientation": 1,
+    "original_size": [
+      1896,
+      1044
+    ],
+    "web_size": [
+      1800,
+      991
+    ],
+    "bytes": 97804
+  },
+  {
+    "slug": "case-04-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑦色味　顔あり\\资源 44.jpg",
+    "usage": "症例一覧4・Before",
+    "orientation": 1,
+    "original_size": [
+      1940,
+      1294
+    ],
+    "web_size": [
+      1800,
+      1201
+    ],
+    "bytes": 235932
+  },
+  {
+    "slug": "case-04-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑦色味　顔あり\\资源 43 (1).jpg",
+    "usage": "症例一覧4・After",
+    "orientation": 1,
+    "original_size": [
+      1940,
+      1294
+    ],
+    "web_size": [
+      1800,
+      1201
+    ],
+    "bytes": 181880
+  },
+  {
+    "slug": "case-05-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑨正中離開\\资源 61.jpg",
+    "usage": "症例一覧5・Before",
+    "orientation": 1,
+    "original_size": [
+      1641,
+      1095
+    ],
+    "web_size": [
+      1641,
+      1095
+    ],
+    "bytes": 67430
+  },
+  {
+    "slug": "case-05-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑨正中離開\\资源 62.jpg",
+    "usage": "症例一覧5・After",
+    "orientation": 1,
+    "original_size": [
+      1560,
+      1040
+    ],
+    "web_size": [
+      1560,
+      1040
+    ],
+    "bytes": 68274
+  },
+  {
+    "slug": "case-06-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_7244.JPG",
+    "usage": "症例一覧6・Before",
+    "orientation": 1,
+    "original_size": [
+      3022,
+      1610
+    ],
+    "web_size": [
+      1800,
+      959
+    ],
+    "bytes": 96630
+  },
+  {
+    "slug": "case-06-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9941.JPG",
+    "usage": "症例一覧6・After",
+    "orientation": 1,
+    "original_size": [
+      3302,
+      2057
+    ],
+    "web_size": [
+      1800,
+      1121
+    ],
+    "bytes": 104182
+  },
+  {
+    "slug": "case-07-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_7245.JPG",
+    "usage": "症例一覧7・Before",
+    "orientation": 1,
+    "original_size": [
+      3888,
+      2592
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 84844
+  },
+  {
+    "slug": "case-07-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9942.JPG",
+    "usage": "症例一覧7・After",
+    "orientation": 1,
+    "original_size": [
+      3272,
+      1959
+    ],
+    "web_size": [
+      1800,
+      1078
+    ],
+    "bytes": 83908
+  },
+  {
+    "slug": "case-08-before",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_7246.JPG",
+    "usage": "症例一覧8・Before",
+    "orientation": 1,
+    "original_size": [
+      2167,
+      1709
+    ],
+    "web_size": [
+      1800,
+      1420
+    ],
+    "bytes": 93320
+  },
+  {
+    "slug": "case-08-after",
+    "source": "C:\\Users\\USER\\Downloads\\lovelier_images\\ラブリエ\\⑩　すきっぱ　ウィズ\\IMG_9943.JPG",
+    "usage": "症例一覧8・After",
+    "orientation": 1,
+    "original_size": [
+      3888,
+      2592
+    ],
+    "web_size": [
+      1800,
+      1200
+    ],
+    "bytes": 113406
+  }
+]

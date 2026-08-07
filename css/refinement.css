@@ -1,0 +1,173 @@
+/* Final visual and interaction refinement layer. */
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  min-width: 0;
+}
+
+h1,
+h2,
+h3 {
+  word-break: auto-phrase;
+  text-wrap: balance;
+}
+
+p,
+li,
+dd {
+  word-break: auto-phrase;
+}
+
+.case-data {
+  grid-template-columns: .8fr 1.2fr;
+}
+
+.case-disclosure {
+  padding: 4px 0 4px 28px;
+  border-left: 1px solid var(--gold);
+}
+
+.case-disclosure p {
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+
+.case-disclosure .status-label {
+  margin-bottom: 16px;
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.case-disclosure .verify-note {
+  margin: 14px 0 0;
+}
+
+.noa-copy {
+  max-width: 540px;
+  font: 500 clamp(18px, 1.55vw, 23px) / 1.9 var(--serif);
+}
+
+.noa .verify-note {
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, .16);
+  color: rgba(255, 255, 255, .55);
+}
+
+.clinic-notice {
+  margin-top: 38px;
+  padding: 24px 26px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, .42);
+}
+
+.clinic-notice strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--green);
+  font-size: 10px;
+  letter-spacing: .18em;
+}
+
+.clinic-notice p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.case-card > p {
+  color: var(--green);
+  font-size: 11px;
+  letter-spacing: .06em;
+}
+
+.case-card summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  color: var(--muted);
+  text-underline-offset: 4px;
+}
+
+.header-cta,
+.mobile-menu-cta,
+.primary-button,
+.outline-button {
+  border-radius: 0;
+  transition: color .2s, background-color .2s, border-color .2s, transform .2s;
+}
+
+.header-cta:hover,
+.mobile-menu-cta:hover,
+.outline-button:hover {
+  color: var(--green);
+  background: transparent;
+}
+
+.header-cta:active,
+.mobile-menu-cta:active,
+.primary-button:active,
+.outline-button:active {
+  transform: translateY(1px);
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+  }
+
+  .section-head h2,
+  .about h2,
+  .thinness h2,
+  .features h2,
+  .noa h2,
+  .pricing h2,
+  .guarantee h2,
+  .clinic h2,
+  .final-cta h2 {
+    font-size: clamp(30px, 7.7vw, 40px);
+    line-height: 1.42;
+  }
+
+  .section-head > p:last-child {
+    margin-top: 20px;
+  }
+
+  .case-data {
+    display: block;
+  }
+
+  .case-disclosure {
+    margin-top: 28px;
+    padding-left: 20px;
+  }
+
+  .noa-copy {
+    font-size: 18px;
+  }
+
+  .clinic-notice {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 359px) {
+  .section-head h2,
+  .about h2,
+  .thinness h2,
+  .features h2,
+  .noa h2,
+  .pricing h2,
+  .guarantee h2,
+  .clinic h2,
+  .final-cta h2 {
+    font-size: 29px;
+  }
+}

@@ -1,0 +1,11 @@
+@media (min-width: 1121px) {
+  .price-grid {
+    grid-template-columns: .95fr 1.05fr;
+    gap: 70px 80px;
+  }
+
+  .price-intro h2 {
+    font-size: clamp(42px, 3.8vw, 58px);
+    line-height: 1.48;
+  }
+}
