@@ -3327,3 +3327,39 @@ html {
 }
 /* v60c — prevent viewport-width artwork from creating a horizontal scrollbar */
 html { overflow-x: clip; }
+/* v62 — concern cards explain the problem through real before/after pairs */
+#concerns-title {
+  scroll-margin-top: 120px;
+}
+
+.concern-card:nth-child(2) .concern-visual-pair figure {
+  overflow: hidden;
+}
+
+.concern-card:nth-child(2) .concern-visual-pair img {
+  transform: scale(1.2);
+  object-position: center 53%;
+}
+.concern-grid { gap: 84px 34px; }
+.concern-grid .concern-card,
+.concern-grid .concern-card:nth-child(even) { display: block; transform: none; }
+.concern-card .concern-visual-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 0; }
+.concern-card .concern-visual-pair figure { position: relative; height: 330px; overflow: hidden; background: #101314; }
+.concern-card .concern-visual-pair img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.concern-card .concern-visual-pair figure > span { position: absolute; z-index: 2; top: 12px; left: 12px; padding: 5px 8px; color: #fff; background: rgba(9,13,14,.74); font: 600 8px/1 var(--sans); letter-spacing: .16em; }
+.concern-card .concern-card-copy { padding: 26px 0 0; border-top: 1px solid var(--border); }
+.concern-card .concern-card-copy > span { color: #a4762f; font: 600 9px/1.4 var(--sans); letter-spacing: .18em; }
+.concern-card .concern-card-copy h3 { margin: 12px 0 10px; font-size: clamp(27px,2.2vw,35px); line-height: 1.45; }
+.concern-card .concern-card-copy p { max-width: 520px; min-height: 3.6em; line-height: 1.8; }
+.concern-card .concern-card-copy a { display: inline-block; margin-top: 20px; padding-bottom: 4px; border-bottom: 1px solid rgba(18,62,58,.38); color: var(--green); font-size: 11px; text-decoration: none; }
+.concern-card .concern-card-copy a:hover { border-color: var(--gold); color: #8a6227; }
+.concern-tags { margin-top: 110px; }
+@media (max-width: 767px) {
+  .concern-grid { display: block; }
+  .concern-grid .concern-card { margin-bottom: 68px; }
+  .concern-card .concern-visual-pair figure { height: 210px; }
+  .concern-card .concern-card-copy { padding-top: 22px; }
+  .concern-card .concern-card-copy h3 { font-size: 28px; }
+  .concern-card .concern-card-copy p { min-height: 0; }
+  .concern-tags { margin-top: 30px; }
+}
