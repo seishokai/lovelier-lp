@@ -1,74 +1,65 @@
-/* v1 — six-language flag switcher and multilingual typography */
-:root { --language-height: 44px; }
-html { scroll-padding-top: calc(var(--language-height) + var(--header-height) + 28px); }
+/* v3 — compact six-language flags inside the primary header */
+:root { --language-height: 0px; }
+html { scroll-padding-top: calc(var(--header-height) + 28px); }
 .language-switcher {
-  position: sticky;
-  z-index: 70;
-  top: 0;
-  height: var(--language-height);
-  color: rgba(255,255,255,.82);
-  border-bottom: 1px solid rgba(213,174,102,.42);
-  background: #0c1011;
-}
-.language-switcher-inner {
-  width: min(100%,1600px);
-  height: 100%;
-  margin: auto;
-  padding: 0 clamp(20px,3vw,48px);
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-.language-kicker {
   flex: 0 0 auto;
-  color: #d8b676;
-  font: 700 9px/1 var(--sans);
-  letter-spacing: .24em;
+  color: var(--ink);
+  background: transparent;
 }
+.language-kicker { display: none; }
 .language-options {
   min-width: 0;
+  height: 34px;
   display: flex;
-  align-items: stretch;
-  height: 100%;
+  align-items: center;
+  gap: 3px;
 }
 .language-options button {
   position: relative;
-  min-width: 112px;
-  padding: 0 17px;
-  border: 0;
-  border-left: 1px solid rgba(255,255,255,.1);
+  width: 32px;
+  min-width: 32px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  color: rgba(255,255,255,.62);
+  color: var(--muted);
   background: transparent;
   cursor: pointer;
-  transition: color .2s, background .2s;
+  transition: border-color .2s, background .2s, transform .2s;
 }
-.language-options button:last-child { border-right: 1px solid rgba(255,255,255,.1); }
 .language-options button::after {
   content: "";
   position: absolute;
-  right: 15px;
-  bottom: 0;
-  left: 15px;
+  right: 4px;
+  bottom: -3px;
+  left: 4px;
   height: 2px;
-  background: #d8b676;
+  background: var(--gold);
   transform: scaleX(0);
   transition: transform .2s;
 }
 .language-options button:hover,
 .language-options button:focus-visible,
-.language-options button.is-active { color: #fff; background: rgba(255,255,255,.055); }
+.language-options button.is-active { border-color: rgba(160,121,61,.42); background: rgba(160,121,61,.08); }
+.language-options button:hover { transform: translateY(-1px); }
 .language-options button.is-active::after { transform: scaleX(1); }
-.language-flag { width:24px; height:16px; flex:0 0 auto; display:block; object-fit:cover; border:1px solid rgba(255,255,255,.28); box-shadow:0 1px 5px rgba(0,0,0,.28); }
-.language-options b { font-size: 11px; font-weight: 500; white-space: nowrap; }
-.language-options small { display: none; font-size: 9px; font-weight: 700; letter-spacing: .08em; }
-.site-header { top: var(--language-height); }
-.mobile-menu { top: calc(var(--language-height) + var(--header-height)); }
-.hero { min-height: calc(100svh - var(--language-height) - var(--header-height)); }
-.hero-media { height: calc(100svh - var(--language-height) - var(--header-height)); }
+.language-flag {
+  width: 22px;
+  height: 15px;
+  flex: 0 0 auto;
+  display: block;
+  object-fit: cover;
+  border: 1px solid rgba(8,14,15,.18);
+  box-shadow: 0 1px 4px rgba(0,0,0,.12);
+}
+.language-options b,
+.language-options small { display: none; }
+.site-header { top: 0; }
+.mobile-menu { top: var(--header-height); }
+.hero { min-height: calc(100svh - var(--header-height)); }
+.hero-media { height: calc(100svh - var(--header-height)); }
 .comparison-grid p::before { content: attr(data-label) !important; }
 
 html:not([data-language="ja"]) body { line-height: 1.68; }
@@ -96,26 +87,20 @@ html[data-language="vi"] .doctor-role-jp,
 html[data-language="fil"] .doctor-role-jp { letter-spacing: 0; }
 
 @media (max-width: 1120px) {
-  .language-options { width: 100%; justify-content: flex-end; }
-  .language-options button { min-width: 88px; padding-inline: 12px; }
+  .language-switcher { margin-left: auto; }
+  .header-cta { margin-left: 0; }
 }
 @media (max-width: 767px) {
-  :root { --language-height: 48px; }
-  .language-switcher-inner { padding: 0 10px; gap: 8px; overflow: hidden; }
-  .language-kicker { display: none; }
-  .language-options {
-    width: 100%;
-    justify-content: flex-start;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scrollbar-width: none;
-  }
-  .language-options::-webkit-scrollbar { display: none; }
-  .language-options button { flex: 0 0 47.5px; min-width: 47.5px; padding: 0 4px; gap: 4px; }
-  .language-options button::after { right: 8px; left: 8px; }
-  .language-flag { width:22px; height:15px; }
-  .language-options b { display: none; }
-  .language-options small { display: inline; }
+  .header-inner { gap: 5px; padding-inline: 12px; }
+  .header-inner .brand { flex: 0 0 72px; min-width: 72px; }
+  .header-inner .brand-name { font-size: 15px; white-space: nowrap; }
+  .header-inner .brand-sub { margin-top: 4px; font-size: 7px; letter-spacing: .2em; }
+  .language-switcher { margin-left: auto; }
+  .language-options { height: 30px; gap: 2px; }
+  .language-options button { flex: 0 0 26px; width: 26px; min-width: 26px; height: 28px; }
+  .language-options button::after { right: 3px; bottom: -2px; left: 3px; }
+  .language-flag { width: 18px; height: 12px; }
+  .menu-toggle { flex: 0 0 36px; width: 36px; }
   .hero { min-height: auto; }
   .hero-media { height: auto; }
   html:not([data-language="ja"]) h1 { font-size: clamp(34px,10vw,44px); }
@@ -130,4 +115,11 @@ html[data-language="fil"] .doctor-role-jp { letter-spacing: 0; }
   html:not([data-language="ja"]) .pricing h2,
   html:not([data-language="ja"]) .guarantee h2,
   html:not([data-language="ja"]) .final-cta h2 { font-size: clamp(31px,9vw,42px); }
+}
+@media (max-width: 359px) {
+  .header-inner { padding-inline: 9px; gap: 3px; }
+  .header-inner .brand { flex-basis: 68px; min-width: 68px; }
+  .language-options { gap: 1px; }
+  .language-options button { flex-basis: 25px; width: 25px; min-width: 25px; }
+  .menu-toggle { flex-basis: 34px; width: 34px; }
 }
