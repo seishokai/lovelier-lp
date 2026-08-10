@@ -2475,11 +2475,12 @@ html {
   .pricing .price-matrix-row span::before { color: rgba(255,255,255,.42); }
 }
 
-/* v47 - structured doctor affiliations */
+/* v47 - structured doctor affiliations
+   v67: 役職 3 行 (副理事長 / 名古屋ウィズ院長 / BF中日ビル院長) を大きく */
 .doctor-role-jp {
   display: grid;
-  gap: 6px;
-  margin: 18px 0 38px;
+  gap: 10px;
+  margin: 22px 0 40px;
   padding: 16px 18px;
   border-top: 1px solid rgba(226, 199, 143, .35);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -2489,18 +2490,21 @@ html {
 }
 .doctor-role-jp strong {
   color: #e2c78f;
-  font: 500 14px/1.5 var(--serif);
+  font: 500 clamp(18px, 1.5vw, 22px)/1.5 var(--serif);
   letter-spacing: .04em;
 }
 .doctor-role-jp strong span {
-  margin-left: 12px;
-  color: rgba(255, 255, 255, .68);
-  font: 500 11px/1.5 var(--sans);
+  margin-left: 14px;
+  color: rgba(255, 255, 255, .82);
+  font: 500 clamp(14px, 1.15vw, 16px)/1.5 var(--sans);
   letter-spacing: .06em;
 }
 .doctor-role-jp > span {
   position: relative;
-  padding-left: 18px;
+  padding-left: 20px;
+  font-size: clamp(15px, 1.2vw, 17px);
+  line-height: 1.65;
+  color: rgba(255, 255, 255, .82);
 }
 .doctor-role-jp > span::before {
   content: "";
@@ -2513,17 +2517,17 @@ html {
 }
 @media (max-width: 767px) {
   .doctor-role-jp {
-    margin: 16px 0 32px;
-    padding: 14px 0;
-    gap: 8px;
+    margin: 18px 0 32px;
+    padding: 16px 0;
+    gap: 10px;
   }
-  .doctor-role-jp strong { font-size: 13px; }
+  .doctor-role-jp strong { font-size: 17px; }
   .doctor-role-jp strong span {
     display: block;
-    margin: 3px 0 0;
-    font-size: 10px;
+    margin: 4px 0 0;
+    font-size: 13px;
   }
-  .doctor-role-jp > span { font-size: 11px; }
+  .doctor-role-jp > span { font-size: 14px; line-height: 1.55; }
 }
 /* v48 - dental-loan estimate in every price cell */
 .price-main {
