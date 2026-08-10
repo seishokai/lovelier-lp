@@ -6,6 +6,7 @@ const mobileMenu = document.querySelector('[data-mobile-menu]');
 const toast = document.querySelector('[data-toast]');
 const moreCasesButton = document.querySelector('[data-more-cases]');
 let toastTimer;
+const uiText = (source) => window.LovelierI18n?.t(source) || source;
 
 const updateHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 12);
 updateHeader();
@@ -15,7 +16,7 @@ const closeMenu = ({ returnFocus = false } = {}) => {
   if (!menuToggle || !mobileMenu) return;
   const wasOpen = menuToggle.getAttribute('aria-expanded') === 'true';
   menuToggle.setAttribute('aria-expanded', 'false');
-  menuToggle.setAttribute('aria-label', 'メニューを開く');
+  menuToggle.setAttribute('aria-label', uiText('メニューを開く'));
   mobileMenu.hidden = true;
   document.body.classList.remove('menu-open');
   if (returnFocus && wasOpen) menuToggle.focus();
@@ -24,12 +25,17 @@ const closeMenu = ({ returnFocus = false } = {}) => {
 menuToggle?.addEventListener('click', () => {
   const opening = menuToggle.getAttribute('aria-expanded') !== 'true';
   menuToggle.setAttribute('aria-expanded', String(opening));
-  menuToggle.setAttribute('aria-label', opening ? 'メニューを閉じる' : 'メニューを開く');
+  menuToggle.setAttribute('aria-label', uiText(opening ? 'メニューを閉じる' : 'メニューを開く'));
   mobileMenu.hidden = !opening;
   document.body.classList.toggle('menu-open', opening);
 });
 
 mobileMenu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => closeMenu()));
+
+window.addEventListener('lovelier:languagechange', () => {
+  const isOpen = menuToggle?.getAttribute('aria-expanded') === 'true';
+  menuToggle?.setAttribute('aria-label', uiText(isOpen ? 'メニューを閉じる' : 'メニューを開く'));
+});
 
 const showStatus = (message) => {
   if (!toast) return;
