@@ -1,0 +1,10 @@
+.flow-list li > * {
+  min-width: 0;
+}
+
+@media (max-width: 359px) {
+  .flow-list h3 {
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+}

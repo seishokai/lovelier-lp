@@ -1,0 +1,20 @@
+.section {
+  scroll-margin-top: 0;
+}
+
+.mobile-menu {
+  max-height: calc(100dvh - var(--header-height));
+  overflow-y: auto;
+  background: var(--paper);
+  box-shadow: 0 24px 50px rgba(18, 30, 28, .12);
+}
+
+.concern-grid article > * {
+  min-width: 0;
+}
+
+@media (max-width: 359px) {
+  .concern-grid figure {
+    width: 100%;
+  }
+}
